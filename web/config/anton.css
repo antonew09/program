@@ -1,0 +1,92 @@
+body{
+    font: 18px/36px 'Arial Narrow', Franklin Gothic Demi Cond, sans-serif;    
+    background-image: url(../image/papankayu.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    margin: 100px 0 50px 0;
+    text-align: center;
+    text-shadow: 5px 5px 5px red;
+    font-family: Comic Sans MS;
+    color: yellow;
+}
+
+.container{
+    width: 850px;
+    height: 150px;
+    background-color: darkgray;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,.3);
+    border-radius: 5px;
+}
+
+.galery{
+    margin: -10px 0 0 0;
+    width: 100px;
+    height: 120px;
+    border: 5px solid red;
+    float: left;
+    margin-right: 20px;
+}
+
+.galery img{
+    width: 120px;
+    height: 120px;
+    margin-left: -40px;
+}
+
+.galery span{
+    display: block;
+    margin: -10px 0 -15px -40px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Franklin Gothic Demi Cond";
+    color: yellow;
+    text-shadow: 3px 3px 3px red;
+}
+
+.galery:hover{background:yellow;}
+
+.galery nim{
+    font-weight: bold;
+    margin-left: -40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.star{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    width: 200px;
+    background-color: red;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0 0 3px 3px rgba(10,10,10,.5);
+    cursor: pointer;
+    font-family: MV Boli;
+    font-weight: bold;
+}
+.star:hover{
+    background: yellow;
+    color: blue;
+}
+
+.star:active{
+    background: blue;
+}
+
+
+.clear{
+    clear: both;
+}

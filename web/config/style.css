@@ -1,0 +1,253 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+table{
+    color:#333;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    border-apacing: 0;
+}
+
+td, th { border: 1px solid #220b22; height: 30px; }
+
+th{
+    background: lightblue;
+    font-wight: bold;
+}
+
+td{
+    background: darkgrey;
+}
+
+body{
+    background-color: lightblue;
+    background-image: url('../image/papankayu.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #222;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #111;
+}
+
+#wrap{
+    margin: 0 auto;
+    width: 965px;
+}
+
+#header {
+    height: 130px;
+    margin: 0 auto;
+    width: 965px;
+    background-color: white;
+    background-image: url('../image/merah.jpg');
+    background-size: 100% 100%;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+}
+
+#header h1 {
+    font-size: 30px;
+    letter-spacing: -1px;
+    padding: 15px 0 0 20px;
+    color: red;
+    margin: 0 0 10px 0;
+}
+
+#header h1 a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: -2px;
+    font-size: 40px;
+}
+
+#header h1 a:hover {
+    color: darkblue;
+}
+
+#header h2 {
+    font-size: 23px;
+    font-family: "Franklin Gothic Demi Cond";
+    font-weight: bold;
+    color: darkblue;
+    padding: 5px 0 0 20px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+#header h3{
+    font-size: 15px;
+    color: #C1DAD7;
+    padding: 5px 0 0 20px;
+    letter-spacing: -1px;
+    font-weight: 100;
+}
+
+#header img{
+    width: 130px;
+    height: 120px;
+    float: right;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#menu{
+    height: 30px;
+    margin: 0 auto;
+    width: 965px;
+    line-height: 30px;
+    background: lightblue;
+}
+
+#menu ul{
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#menu ul li {
+    display: block;
+    float: left;
+}
+
+#menu ul li a {
+    padding: 0 20px 0 0;
+    text-decoration: none;
+    font-weight:600;
+    font-size: 12px;
+    color: black;
+    padding: 0px 10px 7px 10px;
+}
+
+#menu ul li a:hover{
+    color: #222;
+    text-decoration: none;
+}
+
+#content{
+    background-color: yellow;
+    padding: 0 10px;
+}
+
+.right {
+    float: right;
+    width: 745px;
+    text-align: justify;
+    padding-top: 9px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.right h2{
+    font-size: 18px;
+    font-weight: 100;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    background: darkgray;
+}
+
+.right h2 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.left{
+    float: left;
+    width: 190px;
+    padding-top: 5px;
+}
+
+.left h2{
+    margin: 5px 0 0 0;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    background: lightblue;
+    color: #222;
+    font-size: 13px;;
+}
+
+.left ul{
+    padding: 10px 0 15px 20px;
+    list-style-type: square;
+    color: orangered;
+}
+.left ul li a{text-decoration:none; font-weight: 600;}
+.left ul li a:hover{color:#111;}
+.footer{
+    text-align: center;
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 40px;
+    border-top: 1px dotted black;
+    padding-top: 10px;
+}
+.footer a{color:blue;}
+.footer a:hover{color: #111;}
+
+.isi td{
+    border-right: 1px solid #C1DAD7;
+    border-bottom: 1px solid #C1DAD7;
+    background: #ffffff;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #006400;
+    font: 12px "Tahoma",Arial,sans-serif;
+}
+
+.head td{
+    border-right: 1px solid #C1DAD7;
+    border-bottom: 1px solid #C1CDAD7;
+    border-top: 1px solid #C1CDAD7;
+    background: #90ee90;
+    letter-spacing: 1px;
+    padding: 4px 2px 4px 10px;
+    color: #000080;
+    text-align: center;
+    font: 13px "Tahoma",Arial,sans-serif;
+}
+
+.button{
+    margin-left: 0;
+    padding: 4px 4px;
+    border: none;
+    background: #E9CF16;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: "Tahoma";
+    width: 70px;
+}
+
+.buttonlap{
+    margin-left: 0;
+    padding: 4px 4px;
+    border: none;
+    background: #E9CF16;
+    font-size: 13px;
+    color: #ffffff;
+    font-family: "Tahoma";
+    width: 200px;
+}
+
+.button a:hover{
+    background: #90ee90;
+}

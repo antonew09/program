@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9b654259-956f-4b2a-bf07-0ec7482d0ed4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     team.`id_team` AS team_id_team,
+     team.`nama_team` AS team_nama_team,
+     team.`alamat` AS team_alamat,
+     team.`nohp` AS team_nohp
+FROM
+     `team` team]]>
+	</queryString>
+	<field name="team_id_team" class="java.lang.String"/>
+	<field name="team_nama_team" class="java.lang.String"/>
+	<field name="team_alamat" class="java.lang.String"/>
+	<field name="team_nohp" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<image>
+				<reportElement x="275" y="0" width="300" height="64" uuid="66da0311-92ad-4f81-9916-9164cded1218"/>
+				<imageExpression><![CDATA["leaf_banner_green.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="274" height="33" uuid="9a91462a-6869-45f7-b032-f0b5c57222f9"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Tim Anggota]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="100" y="46" width="174" height="22" uuid="5dcc99fc-f72d-4bc7-aa57-6b5fce166540"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[BoyBand Family]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="a72823d6-11e8-4602-8c4b-f8ab7c0e7c8d"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="19" width="138" height="15" uuid="0c7fc25e-ab14-45ba-a233-07273122cc44"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ID Tim]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="138" y="19" width="138" height="15" uuid="c9d06780-0dec-4f6e-8781-17b5f2becb36"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama Tim]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="276" y="19" width="138" height="15" uuid="843581f1-ee7b-444b-bd71-8d30c723c7e6"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="414" y="19" width="138" height="15" uuid="24b0a166-a3d9-40b5-9482-6f85b1a60408"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No. HP]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="a4483ab9-5e77-4e58-97f5-74a66c572715"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="0" y="0" width="138" height="15" uuid="ed6a97f4-f158-4916-bebf-edcfe06ffe5c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{team_id_team}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="138" y="0" width="138" height="15" uuid="4b9f3d29-0cd6-419e-b248-6481b28445ea"/>
+				<textFieldExpression><![CDATA[$F{team_nama_team}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="276" y="0" width="138" height="15" uuid="409ebda7-86ff-4527-9a20-4c1e83c5a20e"/>
+				<textFieldExpression><![CDATA[$F{team_alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="414" y="0" width="138" height="15" uuid="b1d5c571-4fdc-448a-bd9d-d5c4617dbdaf"/>
+				<textFieldExpression><![CDATA[$F{team_nohp}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="a3fbce5c-d295-47f0-a81f-7973ad5e9908"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="3027e993-5479-41e4-a39b-38396c045408"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="0588e58c-38da-4a1c-8446-ce939ac6e35c"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="911ddc66-2040-42cc-bb50-066d40296b4e"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
